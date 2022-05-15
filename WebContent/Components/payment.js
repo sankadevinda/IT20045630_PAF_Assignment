@@ -128,20 +128,29 @@ if (status == "success")
 //CLIENTMODEL=========================================================================
 function validateUserForm()
 {
-  if ($("#customer_name").val().trim() == "")
- {
- return "Insert customer name.";
- }
+ if ($("#customer_name").val().trim() == "")
+	 {
+		return "Insert customer name.";
+	 }
  
  if ($("#account_number").val().trim() == "")
- {
- return "Insert acc number name.";
- }
+	 {
+		 return "Insert acc number name.";
+	 }
  
  if ($("#date").val() == "0")
- {
- return "Select date.";
- }
+	 {
+	 	return "Select date.";
+	 }
+ if ($("#payment_type").val() == "0")
+	 {
+	 	return "Select type.";
+	 }
+ 
+  if ($("#total_price").val() == "0")
+	 {
+	 	return "input price.";
+	 }
 return true;
 }
 
